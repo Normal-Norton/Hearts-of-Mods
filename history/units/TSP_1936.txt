@@ -1,0 +1,89 @@
+division_template = {
+	name = "Federal Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Federal Enforcement Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+
+#Federal Enforcement, Berlin
+
+division = {	
+		name = "1. Federal Enforcement"
+		location = 6521
+		division_template = "Federal Enforcement Division"
+		start_experience_factor = 0.3
+	}
+division = {	
+		name = "2. Federal Enforcement"
+		location = 6521
+		division_template = "Federal Enforcement Division"
+		start_experience_factor = 0.3
+	}
+division = {	
+		name = "3. Federal Enforcement"
+		location = 6521
+		division_template = "Federal Enforcement Division"
+		start_experience_factor = 0.3
+	}
+
+#Federal Enforcement, Lowlands
+
+division = {	
+		name = "4. Federal Enforcement"
+		location = 9403
+		division_template = "Federal Enforcement Division"
+		start_experience_factor = 0.3
+	}
+division= {	
+		name = "5. 'Liberty' Federal Enforcement"
+		location = 6446
+		division_template = "Federal Enforcement Division"
+		start_experience_factor = 0.3
+	}
+
+#Federal Army
+division = {	
+		name = "1. 'Iron' Federal Infantry"
+		location = 3369
+		division_template = "Federal Infantry Division"
+		start_experience_factor = 0.3
+	}
+division = {	
+		name = "2. Federal Infantry"
+		location = 3369
+		division_template = "Federal Infantry Division"
+		start_experience_factor = 0.3
+	}
+division = {	
+		name = "3. Federal Infantry"
+		location = 3369
+		division_template = "Federal Infantry Division"
+		start_experience_factor = 0.3
+	}
+}

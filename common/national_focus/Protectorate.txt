@@ -1,0 +1,73 @@
+focus_tree = {
+	id = Protectorate
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TSP
+		}
+	}
+	focus = {
+		id = TSP_extremist_reformation
+		icon = GFX_generic_major_alliance
+		cost = 10.00
+		x = 7
+		y = 1
+	complete_tooltip = {
+		}
+completion_reward = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+				add_political_power = 100
+	}
+}
+	focus = {
+		id = TSP_nationalist_reforms
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		mutually_exclusive = { focus = TSP_communist_reforms }
+		prerequisite = {
+			focus = TSP_extremist_reformation
+		}
+		x = 5
+		y = 2
+completion_reward = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.2
+				}
+				add_political_power = 125
+		}
+	}
+	focus = {
+		id = TSP_communist_reforms
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = TSP_extremist_reformation
+		}
+		x = 9
+		y = 2
+completion_reward = {
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.2
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+				add_political_power = 125
+		}
+	}
+}

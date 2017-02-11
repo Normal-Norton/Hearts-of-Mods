@@ -1,0 +1,399 @@
+focus_tree = {
+	id = Ireland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ISA
+		}
+	}
+	#default = no
+	focus = {
+		id = More_Federal_Intervention
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		mutually_exclusive = {
+			focus = More_Autonomy
+		}
+		x = 4
+		y = 0
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = More_Autonomy
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		mutually_exclusive = {
+			focus = More_Federal_Intervention
+		}
+		x = 8
+		y = 0
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Irish_Development
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		x = 16
+		y = 0
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Federal_Protectionism
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = More_Federal_Intervention
+		}
+		x = 3
+		y = 1
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Federal_Conscription
+		icon = GFX_goal_rhineland
+		cost = 10.00
+		prerequisite = {
+			focus = Federal_Protectionism
+		}
+		x = 3
+		y = 2
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Increase_Industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = More_Federal_Intervention
+			focus = More_Autonomy
+		}
+		x = 6
+		y = 1
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Increase_Military_Industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Increase_Industry
+		}
+		x = 6
+		y = 2
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Establish_Federal_Army
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = Federal_Conscription
+		}
+		prerequisite = {
+			focus = Increase_Military_Industry
+		}
+		x = 5
+		y = 3
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Expand_Diplomacy
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = More_Autonomy
+		}
+		x = 9
+		y = 1
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Establish_Military_Funding
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = Expand_Diplomacy
+		}
+		x = 9
+		y = 2
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Establish_National_Army
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = Establish_Military_Funding
+		}
+		prerequisite = {
+			focus = Increase_Military_Industry
+		}
+		x = 7
+		y = 3
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Establish_Elite_Forces
+		icon = GFX_goal_demand_sudetenland
+		cost = 20.00
+		prerequisite = {
+			focus = Establish_Federal_Army
+			focus = Establish_National_Army
+		}
+		x = 6
+		y = 4
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Fortify_The_Irish_Ports
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10.00
+		prerequisite = {
+			focus = Establish_Military_Funding
+		}
+		x = 9
+		y = 3
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Fortify_Irish_Holdings
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = Establish_Military_Funding
+		}
+		x = 11
+		y = 3
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Perpare_For_Independence
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = Establish_National_Army
+		}
+		prerequisite = {
+			focus = Fortify_The_Irish_Ports
+		}
+		prerequisite = {
+			focus = Fortify_Irish_Holdings
+		}
+		x = 9
+		y = 4
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Declare_Independence
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		cost = 15.00
+		prerequisite = {
+			focus = Perpare_For_Independence
+		}
+		x = 9
+		y = 5
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Mór_Éireann
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = Declare_Independence
+		}
+		x = 9
+		y = 6
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Scottish_Agreement
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 0.00
+		prerequisite = {
+			focus = Mór_Éireann
+		}
+		mutually_exclusive = {
+			focus = Force_Federal_Removal
+		}
+		x = 9
+		y = 7
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Develop_Citizen_Economy
+		icon = GFX_goal_generic_consumer_goods
+		cost = 12.00
+		prerequisite = {
+			focus = Irish_Development
+		}
+		x = 14
+		y = 1
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = New_Civilian_Factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Develop_Citizen_Economy
+		}
+		x = 13
+		y = 3
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Perfected_Defense
+		icon = GFX_goal_generic_construct_military
+		cost = 20.00
+		prerequisite = {
+			focus = Fortify_Irish_Holdings
+		}
+		prerequisite = {
+			focus = New_Civilian_Factories
+		}
+		x = 12
+		y = 4
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Infrastructure_I
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = Irish_Development
+		}
+		x = 16
+		y = 1
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Infrastructure_II
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = Infrastructure_I
+		}
+		x = 16
+		y = 2
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = More_Conscription
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = Establish_Elite_Forces
+		}
+		x = 7
+		y = 6
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Force_Federal_Removal
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 20.00
+		prerequisite = {
+			focus = More_Conscription
+		}
+		prerequisite = {
+			focus = Mór_Éireann
+		}
+		mutually_exclusive = {
+			focus = Scottish_Agreement
+		}
+		x = 7
+		y = 7
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Military_Factory_I
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Irish_Development
+		}
+		x = 18
+		y = 1
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Military_Factory_II
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Military_Factory_I
+		}
+		x = 18
+		y = 2
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+	focus = {
+		id = Form_Irish_Front
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = Force_Federal_Removal
+			focus = Scottish_Agreement
+		}
+		x = 8
+		y = 8
+	completion_reward = {
+		set_political_power	= 120
+		}
+	}
+}
