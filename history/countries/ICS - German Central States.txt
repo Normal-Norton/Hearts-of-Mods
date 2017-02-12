@@ -1,6 +1,6 @@
 capital = 64
 
-oob = 
+OOB = "ICS_1936"
 
 #starting tech#
 set_technology = {

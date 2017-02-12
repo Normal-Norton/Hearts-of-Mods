@@ -1394,7 +1394,7 @@ TSP_democratic_ADJ:0 "English"
 TSP_neutrality_ADJ:0 "English"
 TSP_communism_ADJ:0 "English"
 
-### Irish-Scottish Federal ###
+### Irish Federal ###
 ISA_fascism:0 "Irish Empire"
 ISA_fascism_DEF:0 "Irish Empire"
 ISA_democratic:0 "Federal Ireland"
@@ -1463,3 +1463,17 @@ FSL_fascism_ADJ:0 "Scottish"
 FSL_democratic_ADJ:0 "Scottish"
 FSL_neutrality_ADJ:0 "Scottish"
 FSL_communism_ADJ:0 "Scottish"
+
+### New Spain ###
+NSP_fascism:0 "Spanish Nationalist Empire"
+NSP_fascism_DEF:0 "Spanish Nationalist Empire"
+NSP_democratic:0 "Federal Spain"
+NSP_democratic_DEF:0 "Federal Spain"
+NSP_neutrality:0 "New Spain"
+NSP_neutrality_DEF:0 "New Spain"
+NSP_communism:0 "Spanish Republic"
+NSP_communism_DEF:0 "Spanish epublic"
+NSP_fascism_ADJ:0 "Spanish"
+NSP_democratic_ADJ:0 "Spanish"
+NSP_neutrality_ADJ:0 "Spanish"
+NSP_communism_ADJ:0 "Spanish"

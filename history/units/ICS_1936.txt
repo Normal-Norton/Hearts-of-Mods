@@ -1,0 +1,83 @@
+division_template = {
+	name = "Bundesinfanterie-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Bundespolizei-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0}
+	}
+}
+
+units = {
+	
+
+	#BRANDENBURG CORPS
+	division = {	
+		name = "1. Infanterie-Division"
+		location = 6521
+		division_template = "Bundesinfanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		name = "2. Infanterie-Division"
+		location = 6521
+		division_template = "Bundesinfanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		name = "3. Infanterie-Division"
+		location = 6521
+		division_template = "Bundesinfanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		name = "4. Infanterie-Division"
+		location = 6521
+		division_template = "Bundesinfanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1. Bundespolizei Division"
+		location = 6521
+		division_template = "Bundespolizei-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2. Bundespolizei Division"
+		location = 6521
+		division_template = "Bundespolizei-Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3. Bundespolizei Division"
+		location = 6521
+		division_template = "Bundespolizei-Division"
+		start_experience_factor = 0.3
+	}
+}
